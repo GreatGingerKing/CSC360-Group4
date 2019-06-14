@@ -152,7 +152,6 @@ export class CalendarComponent implements OnInit {
 
   ngOnInit() {
     this.dataState();
-    this.fbUTEService.setUserId('-Lg0ir26GSjcH6BE5LBE')
     let t = this.fbUTEService.getTripsByUserId();
     t.snapshotChanges().subscribe( data => {
       this.trips = [];
